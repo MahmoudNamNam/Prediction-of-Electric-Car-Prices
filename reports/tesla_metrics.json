@@ -1,0 +1,47 @@
+[
+    {
+        "company": "Tesla",
+        "config": {
+            "SEQUENCE_LENGTH": 30,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 64,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 10
+        },
+        "metrics": {
+            "mse": 30977.69140625,
+            "r2": -1.2649240493774414
+        }
+    },
+    {
+        "company": "Tesla",
+        "config": {
+            "SEQUENCE_LENGTH": 60,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 64,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 10
+        },
+        "metrics": {
+            "mse": 23567.802734375,
+            "r2": -2.2131052017211914
+        }
+    },
+    {
+        "company": "Tesla",
+        "config": {
+            "SEQUENCE_LENGTH": 60,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 64,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 10
+        },
+        "metrics": {
+            "mse": 31230.556640625,
+            "r2": -3.257803440093994
+        }
+    }
+]

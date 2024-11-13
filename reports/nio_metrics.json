@@ -43,5 +43,20 @@
             "mse": 11.645896911621094,
             "r2": 0.29245424270629883
         }
+    },
+    {
+        "company": "NIO",
+        "config": {
+            "SEQUENCE_LENGTH": 60,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 128,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 50
+        },
+        "metrics": {
+            "mse": 6.230494976043701,
+            "r2": -0.6557856798171997
+        }
     }
 ]

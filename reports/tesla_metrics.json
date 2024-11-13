@@ -43,5 +43,20 @@
             "mse": 31230.556640625,
             "r2": -3.257803440093994
         }
+    },
+    {
+        "company": "Tesla",
+        "config": {
+            "SEQUENCE_LENGTH": 60,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 128,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 50
+        },
+        "metrics": {
+            "mse": 30698.234375,
+            "r2": -3.4908576011657715
+        }
     }
 ]

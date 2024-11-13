@@ -43,5 +43,20 @@
             "mse": 14.049371719360352,
             "r2": 0.7627489566802979
         }
+    },
+    {
+        "company": "BMW",
+        "config": {
+            "SEQUENCE_LENGTH": 60,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 128,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 50
+        },
+        "metrics": {
+            "mse": 5.2946977615356445,
+            "r2": 0.9140508770942688
+        }
     }
 ]

@@ -11,7 +11,6 @@ from model import StockPriceLSTM_v1, StockPriceLSTM_v2
 from Data_Preparations import preprocess_data
 from config import *
 from predict import prepare_model_data
-
 # Define companies and their specific themes and logos
 companies = {
     "BMW": {"color": "#0066B2", "logo_path": "logos/bmw_logo.png"},
@@ -93,7 +92,6 @@ if os.path.exists(data_path):
     st.plotly_chart(fig)
     fig.update_layout(title_x=0.5)
 
-    st.write(data.describe())
 
     # Metric selection
     metric = st.selectbox("Select Metric", ["Open", "High", "Low", "Close", "Adj Close", "Volume"])
@@ -109,6 +107,25 @@ if os.path.exists(data_path):
     fig.update_traces(line=dict(color=theme_color))
     fig.update_layout(title_x=0.5)
     st.plotly_chart(fig, use_container_width=True)
+
+    # st.write(data[["Open", "High", "Low", "Close", "Adj Close", "Volume",'EMA_10']].describe() )
+    summary = data[["Open", "High", "Low", "Close", "Adj Close", "Volume", 'EMA_10']].describe()
+
+    # Apply CSS styling to center the dataframe
+    st.markdown(
+        """
+        <style>
+        .stDataFrame {
+            display: flex;
+            justify-content: center;
+        }
+        </style>
+        """, 
+        unsafe_allow_html=True
+    )
+
+    # Show the dataframe with the center-aligned style
+    st.dataframe(summary)
 
     # Moving Averages
     data['MA20'] = data['Close'].rolling(window=20).mean()

@@ -1,62 +1,62 @@
 [
-    {
-        "company": "Tata",
-        "config": {
-            "SEQUENCE_LENGTH": 30,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 630.184814453125,
-            "r2": 0.8823645114898682
-        }
+  {
+    "company": "Tata",
+    "config": {
+      "SEQUENCE_LENGTH": 30,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
     },
-    {
-        "company": "Tata",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 893.2239379882812,
-            "r2": 0.7264318466186523
-        }
-    },
-    {
-        "company": "Tata",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 1100.8963623046875,
-            "r2": 0.6628278493881226
-        }
-    },
-    {
-        "company": "Tata",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 128,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 50
-        },
-        "metrics": {
-            "mse": 389.2648010253906,
-            "r2": 0.8998907804489136
-        }
+    "metrics": {
+      "mse": 630.184814453125,
+      "r2": 0.8823645114898682
     }
+  },
+  {
+    "company": "Tata",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
+    },
+    "metrics": {
+      "mse": 893.2239379882812,
+      "r2": 0.7264318466186523
+    }
+  },
+  {
+    "company": "Tata",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
+    },
+    "metrics": {
+      "mse": 1100.8963623046875,
+      "r2": 0.6628278493881226
+    }
+  },
+  {
+    "company": "Tata",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 128,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 50
+    },
+    "metrics": {
+      "mse": 172.0238800048828,
+      "r2": 0.9557597041130066
+    }
+  }
 ]

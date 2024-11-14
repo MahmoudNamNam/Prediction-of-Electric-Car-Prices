@@ -1,0 +1,32 @@
+[
+    {
+        "company": "Honda",
+        "config": {
+            "SEQUENCE_LENGTH": 60,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 128,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 50
+        },
+        "metrics": {
+            "mse": 0.1368878334760666,
+            "r2": 0.9542248845100403
+        }
+    },
+    {
+        "company": "Honda",
+        "config": {
+            "SEQUENCE_LENGTH": 60,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 128,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 50
+        },
+        "metrics": {
+            "mse": 0.12588046491146088,
+            "r2": 0.9579057693481445
+        }
+    }
+]

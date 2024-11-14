@@ -1,0 +1,32 @@
+[
+    {
+        "company": "Volkswagen",
+        "config": {
+            "SEQUENCE_LENGTH": 60,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 128,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 50
+        },
+        "metrics": {
+            "mse": 27.257953643798828,
+            "r2": 0.9726424217224121
+        }
+    },
+    {
+        "company": "Volkswagen",
+        "config": {
+            "SEQUENCE_LENGTH": 60,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 128,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 50
+        },
+        "metrics": {
+            "mse": 10.927813529968262,
+            "r2": 0.9890322685241699
+        }
+    }
+]

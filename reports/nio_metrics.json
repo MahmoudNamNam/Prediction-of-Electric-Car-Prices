@@ -1,62 +1,47 @@
 [
-    {
-        "company": "NIO",
-        "config": {
-            "SEQUENCE_LENGTH": 30,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 34.79835891723633,
-            "r2": -1.5202982425689697
-        }
+  {
+    "company": "NIO",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
     },
-    {
-        "company": "NIO",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 20.524885177612305,
-            "r2": -0.24698805809020996
-        }
-    },
-    {
-        "company": "NIO",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 11.645896911621094,
-            "r2": 0.29245424270629883
-        }
-    },
-    {
-        "company": "NIO",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 128,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 50
-        },
-        "metrics": {
-            "mse": 6.230494976043701,
-            "r2": -0.6557856798171997
-        }
+    "metrics": {
+      "mse": 20.524885177612305,
+      "r2": -0.24698805809020996
     }
+  },
+  {
+    "company": "NIO",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
+    },
+    "metrics": {
+      "mse": 11.645896911621094,
+      "r2": 0.29245424270629883
+    }
+  },
+  {
+    "company": "NIO",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 128,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 50
+    },
+    "metrics": {
+      "mse": 5.8476362228393555,
+      "r2": 0.8556133424
+    }
+  }
 ]

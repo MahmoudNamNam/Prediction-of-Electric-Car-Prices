@@ -1,62 +1,62 @@
 [
-    {
-        "company": "Volkswagen",
-        "config": {
-            "SEQUENCE_LENGTH": 30,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 139.97091674804688,
-            "r2": 0.8902515769004822
-        }
+  {
+    "company": "Volkswagen",
+    "config": {
+      "SEQUENCE_LENGTH": 30,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
     },
-    {
-        "company": "Volkswagen",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 85.10269927978516,
-            "r2": 0.9188100099563599
-        }
-    },
-    {
-        "company": "Volkswagen",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 625.9392700195312,
-            "r2": 0.4028392434120178
-        }
-    },
-    {
-        "company": "Volkswagen",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 128,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 50
-        },
-        "metrics": {
-            "mse": 333.3077087402344,
-            "r2": 0.6654742956161499
-        }
+    "metrics": {
+      "mse": 139.97091674804688,
+      "r2": 0.8902515769004822
     }
+  },
+  {
+    "company": "Volkswagen",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
+    },
+    "metrics": {
+      "mse": 85.10269927978516,
+      "r2": 0.9188100099563599
+    }
+  },
+  {
+    "company": "Volkswagen",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
+    },
+    "metrics": {
+      "mse": 625.9392700195312,
+      "r2": 0.4028392434120178
+    }
+  },
+  {
+    "company": "Volkswagen",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 128,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 50
+    },
+    "metrics": {
+      "mse": 27.257953643798828,
+      "r2": 0.9726424217224121
+    }
+  }
 ]

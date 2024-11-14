@@ -3,7 +3,7 @@ import json
 import torch
 import pandas as pd
 import numpy as np
-from model import StockPriceLSTM
+from model import StockPriceLSTM_v2
 from Data_Preparations import preprocess_data
 from evaluation import evaluate_model, plot_predictions
 from config import *
@@ -34,8 +34,8 @@ def train_model_for_manufacturer(company):
 
 
     # After creating sequences
-    x_train, y_train = StockPriceLSTM.create_sequences(train_data.values, SEQUENCE_LENGTH)
-    x_test, y_test = StockPriceLSTM.create_sequences(test_data.values, SEQUENCE_LENGTH)
+    x_train, y_train = StockPriceLSTM_v2.create_sequences(train_data.values, SEQUENCE_LENGTH)
+    x_test, y_test = StockPriceLSTM_v2.create_sequences(test_data.values, SEQUENCE_LENGTH)
 
     # Check and enforce numeric type for x_train and y_train
     x_train = np.array(x_train, dtype=np.float32)
@@ -50,7 +50,7 @@ def train_model_for_manufacturer(company):
     y_test = torch.tensor(y_test, dtype=torch.float32)
 
     # Initialize model
-    model = StockPriceLSTM(input_size=1, hidden_layer_size=HIDDEN_LAYER_SIZE, output_size=1)
+    model = StockPriceLSTM_v2(input_size=1, hidden_layer_size=HIDDEN_LAYER_SIZE, output_size=1)
     criterion = torch.nn.MSELoss()
     optimizer = torch.optim.AdamW(model.parameters(), lr=LEARNING_RATE)
 
@@ -97,8 +97,11 @@ def train_model_for_manufacturer(company):
     # Plot and save figure
     fig_path = plot_predictions(train_data, test_data, predictions_rescaled, y_test_rescaled, company, FIGURE_DIR,scaler)
     print(f"Training complete for {company}. Model saved to {model_path}, metrics to {metrics_path}, figure to {fig_path}")
-
+    model.load_state_dict(torch.load(model_path,weights_only=True))
+    model.eval()
+    print(f"Model loaded from {model_path}")
 if __name__ == "__main__":
-    companies = ['BMW', 'Honda', 'NIO', 'Nissan', 'Rolls Royces', 'Tata', 'Tesla', 'Volkswagen']
+    companies = ['BMW', 'Honda', 'NIO', 'Nissan', 'Tata', 'Tesla', 'Volkswagen']
     for company in companies:
         train_model_for_manufacturer(company)
+

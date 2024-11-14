@@ -1,0 +1,32 @@
+[
+    {
+        "company": "Nissan",
+        "config": {
+            "SEQUENCE_LENGTH": 60,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 128,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 50
+        },
+        "metrics": {
+            "mse": 373.098876953125,
+            "r2": 0.8326038122177124
+        }
+    },
+    {
+        "company": "Nissan",
+        "config": {
+            "SEQUENCE_LENGTH": 60,
+            "EPOCHS": 100,
+            "HIDDEN_LAYER_SIZE": 128,
+            "LEARNING_RATE": 0.001,
+            "TRAIN_SIZE": 0.8,
+            "EMA_WINDOW": 50
+        },
+        "metrics": {
+            "mse": 545.4300537109375,
+            "r2": 0.7552850246429443
+        }
+    }
+]

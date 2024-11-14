@@ -1,62 +1,62 @@
 [
-    {
-        "company": "BMW",
-        "config": {
-            "SEQUENCE_LENGTH": 30,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 8.343579292297363,
-            "r2": 0.901493489742279
-        }
+  {
+    "company": "BMW",
+    "config": {
+      "SEQUENCE_LENGTH": 30,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
     },
-    {
-        "company": "BMW",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 10.027654647827148,
-            "r2": 0.8306635022163391
-        }
-    },
-    {
-        "company": "BMW",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 14.049371719360352,
-            "r2": 0.7627489566802979
-        }
-    },
-    {
-        "company": "BMW",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 128,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 50
-        },
-        "metrics": {
-            "mse": 5.2946977615356445,
-            "r2": 0.9140508770942688
-        }
+    "metrics": {
+      "mse": 8.343579292297363,
+      "r2": 0.901493489742279
     }
+  },
+  {
+    "company": "BMW",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
+    },
+    "metrics": {
+      "mse": 10.027654647827148,
+      "r2": 0.8306635022163391
+    }
+  },
+  {
+    "company": "BMW",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
+    },
+    "metrics": {
+      "mse": 14.049371719360352,
+      "r2": 0.7627489566802979
+    }
+  },
+  {
+    "company": "BMW",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 128,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 50
+    },
+    "metrics": {
+      "mse": 2.4949347972869873,
+      "r2": 0.9594995975494385
+    }
+  }
 ]

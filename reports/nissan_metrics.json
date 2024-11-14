@@ -1,62 +1,62 @@
 [
-    {
-        "company": "Nissan",
-        "config": {
-            "SEQUENCE_LENGTH": 30,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 3110.034912109375,
-            "r2": 0.3657075762748718
-        }
+  {
+    "company": "Nissan",
+    "config": {
+      "SEQUENCE_LENGTH": 30,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
     },
-    {
-        "company": "Nissan",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 245.7172393798828,
-            "r2": 0.8068442940711975
-        }
-    },
-    {
-        "company": "Nissan",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 64,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 10
-        },
-        "metrics": {
-            "mse": 900.8013305664062,
-            "r2": 0.2918897271156311
-        }
-    },
-    {
-        "company": "Nissan",
-        "config": {
-            "SEQUENCE_LENGTH": 60,
-            "EPOCHS": 100,
-            "HIDDEN_LAYER_SIZE": 128,
-            "LEARNING_RATE": 0.001,
-            "TRAIN_SIZE": 0.8,
-            "EMA_WINDOW": 50
-        },
-        "metrics": {
-            "mse": 382.109619140625,
-            "r2": 0.8285610675811768
-        }
+    "metrics": {
+      "mse": 3110.034912109375,
+      "r2": 0.3657075762748718
     }
+  },
+  {
+    "company": "Nissan",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
+    },
+    "metrics": {
+      "mse": 245.7172393798828,
+      "r2": 0.8068442940711975
+    }
+  },
+  {
+    "company": "Nissan",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 64,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 10
+    },
+    "metrics": {
+      "mse": 900.8013305664062,
+      "r2": 0.2918897271156311
+    }
+  },
+  {
+    "company": "Nissan",
+    "config": {
+      "SEQUENCE_LENGTH": 60,
+      "EPOCHS": 100,
+      "HIDDEN_LAYER_SIZE": 128,
+      "LEARNING_RATE": 0.001,
+      "TRAIN_SIZE": 0.8,
+      "EMA_WINDOW": 50
+    },
+    "metrics": {
+      "mse": 373.098876953125,
+      "r2": 0.8326038122177124
+    }
+  }
 ]

@@ -1,14 +1,8 @@
 import numpy as np
-from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 import os
-import matplotlib.pyplot as plt
 import plotly.express as px
 import pandas as pd
-import seaborn as sns
-import torch
-from model import StockPriceLSTM_v1, StockPriceLSTM_v2
-from Data_Preparations import preprocess_data
 from config import *
 from predict import prepare_model_data
 # Define companies and their specific themes and logos
@@ -41,8 +35,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-
 
 
 # Display the logo and title for the selected company
@@ -111,7 +103,7 @@ if os.path.exists(data_path):
     # st.write(data[["Open", "High", "Low", "Close", "Adj Close", "Volume",'EMA_10']].describe() )
     summary = data[["Open", "High", "Low", "Close", "Adj Close", "Volume", 'EMA_10']].describe()
 
-    # Apply CSS styling to center the dataframe
+    # center the dataframe
     st.markdown(
         """
         <style>
@@ -123,8 +115,6 @@ if os.path.exists(data_path):
         """, 
         unsafe_allow_html=True
     )
-
-    # Show the dataframe with the center-aligned style
     st.dataframe(summary)
 
     # Moving Averages

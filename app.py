@@ -105,23 +105,6 @@ if os.path.exists(data_path):
     fig.update_layout(title_x=0.5)
     st.plotly_chart(fig, use_container_width=True)
 
-    # st.write(data[["Open", "High", "Low", "Close", "Adj Close", "Volume",'EMA_10']].describe() )
-    summary = data[["Open", "High", "Low", "Close", "Adj Close", "Volume", 'EMA_10']].describe()
-
-    # center the dataframe
-    st.markdown(
-        """
-        <style>
-        .stDataFrame {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        </style>
-        """, 
-        unsafe_allow_html=True
-    )
-    st.dataframe(summary)
 
     # Moving Averages
     data['MA20'] = data['Close'].rolling(window=20).mean()

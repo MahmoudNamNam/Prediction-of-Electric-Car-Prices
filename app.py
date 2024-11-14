@@ -85,6 +85,11 @@ if os.path.exists(data_path):
     fig.update_layout(title_x=0.5)
 
 
+    start_date = pd.to_datetime(st.sidebar.date_input("Start Date", value=data["Date"].min()))
+    end_date = pd.to_datetime(st.sidebar.date_input("End Date", value=data["Date"].max()))
+
+    data = data[(data["Date"] >= start_date) & (data["Date"] <= end_date)]
+
     # Metric selection
     metric = st.selectbox("Select Metric", ["Open", "High", "Low", "Close", "Adj Close", "Volume"])
 
@@ -155,7 +160,7 @@ if os.path.exists(data_path):
         nbins=30, 
         title="Daily Return Distribution",
         labels={"Daily_Return": "Daily Return (%)"},
-        color_discrete_sequence=['#eac']
+        color_discrete_sequence=[theme_color]
     )
     fig_return_dist.update_layout(title_x=0.5)
     st.plotly_chart(fig_return_dist, use_container_width=True)
@@ -171,5 +176,8 @@ if os.path.exists(data_path):
     fig_spread.update_traces(line=dict(color='#aca'))
     fig_spread.update_layout(title_x=0.5)
     st.plotly_chart(fig_spread, use_container_width=True)
+    csv = data.to_csv(index=False)
+    st.download_button(label="Download Filtered Data as CSV", data=csv, file_name=f"{selected_company}_filtered_data.csv")
+
 else:
     st.write("Data file not found.")

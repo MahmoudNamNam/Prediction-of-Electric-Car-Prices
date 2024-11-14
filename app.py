@@ -109,7 +109,8 @@ if os.path.exists(data_path):
         <style>
         .stDataFrame {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
         }
         </style>
         """, 

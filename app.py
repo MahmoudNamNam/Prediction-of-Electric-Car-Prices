@@ -90,8 +90,8 @@ if os.path.exists(data_path):
                 title=f"Price Prediction for {selected_company}",
                 color_discrete_map=color_map)
     fig.update_traces(line=dict(width=3))
-    fig.update_layout(title_x=0.5)
     st.plotly_chart(fig)
+    fig.update_layout(title_x=0.5)
 
     st.write(data.describe())
 

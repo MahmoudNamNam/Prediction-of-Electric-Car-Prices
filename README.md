@@ -49,6 +49,9 @@ Launch the Streamlit app to visualize predictions:
 ```bash
 streamlit run app.py
 ```
+![screenshot-localhost-8501-1731687323445](https://github.com/user-attachments/assets/19b70eb3-96b9-43f9-9cc0-427597555edf)
+![screenshot-localhost-8501-1731687276383](https://github.com/user-attachments/assets/16331b16-6223-4c8f-a22d-c6301fd69925)
+
 
 ## Results and Visualizations
 

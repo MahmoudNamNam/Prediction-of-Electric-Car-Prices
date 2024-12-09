@@ -56,7 +56,3 @@ streamlit run app.py
 ## Results and Visualizations
 
 Each trained model is saved with its metrics and visualizations, providing a clear view of performance and prediction accuracy.
-
-## Contributing
-
-Contributions are welcome. Please submit a pull request for any improvements or bug fixes.
